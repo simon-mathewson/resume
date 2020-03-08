@@ -20,14 +20,18 @@ Font.register({
 
 const styles = StyleSheet.create({
   page: {
+    color: '#222',
     fontFamily: 'Roboto',
-    padding: 48
+    padding: 40
   }
 });
 
 function Resume() {
   return (
-    <Document author="Simon Mathewson">
+    <Document
+      author="Simon Mathewson"
+      title="Simon Mathewson's Resume"
+    >
       <Page
         size="A4"
         style={styles.page}
