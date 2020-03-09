@@ -1,5 +1,6 @@
-import { Image, StyleSheet, Text, View, Link } from '@react-pdf/renderer';
+import { Image, StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
+import Typography from './Typography';
 
 const styles = StyleSheet.create({
   attribute: {
@@ -13,10 +14,6 @@ const styles = StyleSheet.create({
     opacity: .6,
     width: 12
   },
-  attributeLink: {
-    textDecorationColor: '#666',
-    textDecorationStyle: 'dotted'
-  },
   attributes: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -24,7 +21,6 @@ const styles = StyleSheet.create({
     marginTop: 6
   },
   attributeText: {
-    fontSize: 11,
     marginLeft: 8
   },
   header: {
@@ -36,8 +32,6 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   name: {
-    fontFamily: 'Lexend Deca',
-    fontSize: 32,
     marginTop: -4
   },
   portrait: {
@@ -46,12 +40,6 @@ const styles = StyleSheet.create({
     objectFit: 'cover',
     objectPositionY: -10,
     width: 96
-  },
-  role: {
-    color: '#2196f3',
-    fontSize: 15,
-    fontWeight: 500,
-    marginTop: 0
   }
 });
 
@@ -67,13 +55,13 @@ const attributes = [
     text: 'info@simonmathewson.com'
   },
   {
-    icon: 'location',
-    text: 'WA, USA & Berlin, Germany'
-  },
-  {
     icon: 'website',
     link: 'https://simonmathewson.com',
     text: 'simonmathewson.com'
+  },
+  {
+    icon: 'location',
+    text: 'WA, USA & Berlin, Germany'
   }
 ]
 
@@ -81,12 +69,19 @@ function Header() {
   return (
     <View style={styles.header}>
       <View style={styles.headerLeft}>
-        <Text style={styles.name}>
+        <Typography
+          style={styles.name}
+          variant="h1"
+        >
           Simon Mathewson
-        </Text>
-        <Text style={styles.role}>
+        </Typography>
+        <Typography
+          bold
+          color="primary"
+          variant="h3"
+        >
           Full Stack Software Developer
-        </Text>
+        </Typography>
         <View style={styles.attributes}>
           {attributes.map((attribute, attibuteIndex) => (
             <View
@@ -97,17 +92,13 @@ function Header() {
                 src={`/${attribute.icon}-icon.png`}
                 style={styles.attributeIcon}
               />
-              <Text style={styles.attributeText}>
-                {attribute.link &&
-                  <Link
-                    src={attribute.link}
-                    style={styles.attributeLink}
-                  >
-                    {attribute.text}
-                  </Link>
-                }
-                {!attribute.link && attribute.text}
-              </Text>
+              <Typography
+                src={attribute.link}
+                style={styles.attributeText}
+                variant={attribute.link ? 'link' : 'body'}
+              >
+                {attribute.text}
+              </Typography>
             </View>
           ))}
         </View>
