@@ -4,6 +4,9 @@ import Chips from './Chips';
 import Typography from './Typography';
 
 const styles = StyleSheet.create({
+  chipsHeading: {
+    marginTop: 4
+  },
   gitHubHint: {
     marginTop: 8
   },
@@ -17,9 +20,6 @@ const styles = StyleSheet.create({
   root: {
     paddingLeft: 24,
     width: '34%'
-  },
-  sectionHeading: {
-    marginTop: 4
   }
 });
 
@@ -32,7 +32,7 @@ function RightSide() {
       <Typography
         bold
         color="primary"
-        style={styles.sectionHeading}
+        style={styles.chipsHeading}
         variant="h4"
       >
         Frontend
@@ -51,7 +51,7 @@ function RightSide() {
       <Typography
         bold
         color="primary"
-        style={styles.sectionHeading}
+        style={styles.chipsHeading}
         variant="h4"
       >
         Backend
@@ -71,7 +71,7 @@ function RightSide() {
       <Typography
         bold
         color="primary"
-        style={styles.sectionHeading}
+        style={styles.chipsHeading}
         variant="h4"
       >
         Also
