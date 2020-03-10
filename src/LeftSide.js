@@ -57,7 +57,7 @@ function LeftSide() {
         to="2017"
         location="Berlin, Germany"
         listItems={[
-          'Maintained and implemented backend and frontend features for the UI\'s of routers and other networking devices',
+          'Maintained and implemented backend and frontend features for the UI\'s of routers, WiFi repeaters and smart home devices',
           'Designed and implemented custom add-ons for web-based customer service software Zendesk, optimizing workflows and saving fellow employees hundreds of clicks every day since'
         ]}
       />
