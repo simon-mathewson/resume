@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   sections: {
     flexDirection: 'row',
-    marginTop: 8
+    marginTop: 12
   }
 });
 

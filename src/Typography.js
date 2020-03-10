@@ -22,12 +22,14 @@ const styles = StyleSheet.create({
   h1: {
     fontFamily: 'Lexend Deca',
     fontSize: 32,
-    letterSpacing: -1
+    letterSpacing: -1,
+    marginLeft: -1
   },
   h2: {
     fontFamily: 'Lexend Deca',
     fontSize: 20,
-    letterSpacing: -1
+    letterSpacing: -1,
+    marginLeft: -1
   },
   h3: {
     fontFamily: 'Roboto',

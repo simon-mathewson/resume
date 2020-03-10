@@ -5,11 +5,15 @@ import Typography from './Typography';
 
 const styles = StyleSheet.create({
   bullet: {
-    width: 8
+    width: '2%'
   },
   root: {
     flexDirection: 'row',
-    marginTop: 1.5
+    marginTop: 1.5,
+    width: '100%'
+  },
+  text: {
+    width: '98%'
   }
 });
 
@@ -22,7 +26,10 @@ function ListItem(props) {
       >
         •
       </Typography>
-      <Typography variant="body">
+      <Typography
+        style={styles.text}
+        variant="body"
+      >
         {props.children}
       </Typography>
     </View>
