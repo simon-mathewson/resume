@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 const colors = {
   default: '#444',
   primary: '#2196f3',
-  reduced: '#666'
+  reduced: '#888'
 }
 
 function Typography(props) {

@@ -62,8 +62,8 @@ function RightSide() {
         'TypeORM',
         'MySQL',
         'DynamoDB',
-        'Swagger/OpenAPI',
         'Lua',
+        'Swagger/OpenAPI',
         'AWS',
         'Google Cloud',
         'Firebase'
