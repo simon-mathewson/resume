@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
   },
   link: {
     fontSize: 10,
+    textDecoration: 'underline',
     textDecorationColor: '#666',
     textDecorationStyle: 'dotted'
   },
@@ -56,13 +57,12 @@ const colors = {
   default: '#444',
   primary: '#2196f3',
   reduced: '#888'
-}
+};
 
 function Typography(props) {
   const {bold, children, color, debug, src, style, variant} = props;
   const rootProps = {
     debug,
-    src,
     style: {
       ...styles[variant],
       ...style,
@@ -73,8 +73,10 @@ function Typography(props) {
 
   if (variant === 'link') {
     return (
-      <Link {...rootProps}>
-        {children}
+      <Link src={src}>
+        <Text {...rootProps}>
+          {children}
+        </Text>
       </Link>
     );
   }
