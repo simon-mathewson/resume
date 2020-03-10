@@ -2,20 +2,25 @@ import { StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
 import Experience from './Experience';
 import Typography from './Typography';
+import Header from './Header';
 
 const styles = StyleSheet.create({
-  educationTitle: {
-    marginTop: 8
-  },
   root: {
     width: '66%'
+  },
+  sectionTitle: {
+    marginTop: 8
   }
 });
 
 function LeftSide() {
   return (
     <View style={styles.root}>
-      <Typography variant="h2">
+      <Header />
+      <Typography
+        style={styles.sectionTitle}
+        variant="h2"
+      >
         Experience
       </Typography>
       <Experience
@@ -67,7 +72,7 @@ function LeftSide() {
         ]}
       />
       <Typography
-        style={styles.educationTitle}
+        style={styles.sectionTitle}
         variant="h2"
       >
         Education

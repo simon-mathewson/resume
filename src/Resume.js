@@ -1,16 +1,13 @@
-import { Document, Page, StyleSheet, View } from '@react-pdf/renderer';
+import { Document, Page, StyleSheet } from '@react-pdf/renderer';
 import React from 'react';
 import LeftSide from './LeftSide';
-import Header from './Header';
 import RightSide from './RightSide';
 
 const styles = StyleSheet.create({
   page: {
-    padding: 40
-  },
-  sections: {
     flexDirection: 'row',
-    marginTop: 12
+    marginTop: 12,
+    padding: 40
   }
 });
 
@@ -24,11 +21,8 @@ function Resume() {
         size="A4"
         style={styles.page}
       >
-        <Header />
-        <View style={styles.sections}>
-          <LeftSide />
-          <RightSide />
-        </View>
+        <LeftSide />
+        <RightSide />
       </Page>
     </Document>
   );

@@ -6,7 +6,7 @@ import ListItem from './ListItem';
 
 const styles = StyleSheet.create({
   dateAndLocation: {
-    marginTop: 2
+    marginTop: 1
   },
   employer: {
     marginTop: 4

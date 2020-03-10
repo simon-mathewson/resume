@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: 4,
-    width: '35%'
+    width: '40%'
   },
   attributeIcon: {
     height: 12,
@@ -23,23 +23,8 @@ const styles = StyleSheet.create({
   attributeText: {
     marginLeft: 8
   },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
-  headerLeft: {
-    flexShrink: 1,
-    position: 'relative'
-  },
   name: {
-    marginTop: -4
-  },
-  portrait: {
-    borderRadius: 48,
-    height: 96,
-    objectFit: 'cover',
-    objectPositionY: -10,
-    width: 96
+    marginTop: -8
   }
 });
 
@@ -67,46 +52,40 @@ const attributes = [
 
 function Header() {
   return (
-    <View style={styles.header}>
-      <View style={styles.headerLeft}>
-        <Typography
-          style={styles.name}
-          variant="h1"
-        >
-          Simon Mathewson
-        </Typography>
-        <Typography
-          bold
-          color="primary"
-          variant="h3"
-        >
-          Full Stack Software Developer
-        </Typography>
-        <View style={styles.attributes}>
-          {attributes.map((attribute, attibuteIndex) => (
-            <View
-              key={attibuteIndex}
-              style={styles.attribute}
+    <View>
+      <Typography
+        style={styles.name}
+        variant="h1"
+      >
+        Simon Mathewson
+      </Typography>
+      <Typography
+        bold
+        color="primary"
+        variant="h3"
+      >
+        Full Stack Software Developer
+      </Typography>
+      <View style={styles.attributes}>
+        {attributes.map((attribute, attibuteIndex) => (
+          <View
+            key={attibuteIndex}
+            style={styles.attribute}
+          >
+            <Image
+              src={`/${attribute.icon}-icon.png`}
+              style={styles.attributeIcon}
+            />
+            <Typography
+              src={attribute.link}
+              style={styles.attributeText}
+              variant={attribute.link ? 'link' : 'body'}
             >
-              <Image
-                src={`/${attribute.icon}-icon.png`}
-                style={styles.attributeIcon}
-              />
-              <Typography
-                src={attribute.link}
-                style={styles.attributeText}
-                variant={attribute.link ? 'link' : 'body'}
-              >
-                {attribute.text}
-              </Typography>
-            </View>
-          ))}
-        </View>
+              {attribute.text}
+            </Typography>
+          </View>
+        ))}
       </View>
-      <Image
-        src="/portrait.jpg"
-        style={styles.portrait}
-      />
     </View>
   );
 }

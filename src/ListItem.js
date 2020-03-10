@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   root: {
     flexDirection: 'row',
-    marginTop: 1.5,
+    marginTop: 2,
     width: '100%'
   },
   text: {

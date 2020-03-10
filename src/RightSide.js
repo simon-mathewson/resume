@@ -1,4 +1,4 @@
-import { StyleSheet, View } from '@react-pdf/renderer';
+import { StyleSheet, View, Image } from '@react-pdf/renderer';
 import React from 'react';
 import Chips from './Chips';
 import Typography from './Typography';
@@ -15,18 +15,37 @@ const styles = StyleSheet.create({
   },
   languagesHeading: {
     marginBottom: 4,
-    marginTop: 4
+    marginTop: 8
+  },
+  portrait: {
+    borderRadius: 45,
+    height: 90,
+    marginLeft: -2,
+    marginTop: -2,
+    objectFit: 'cover',
+    objectPositionY: -10,
+    width: 90
   },
   root: {
     paddingLeft: 24,
     width: '34%'
+  },
+  technologiesHeading: {
+    marginTop: 8
   }
 });
 
 function RightSide() {
   return (
     <View style={styles.root}>
-      <Typography variant="h2">
+      <Image
+        src="/portrait.jpg"
+        style={styles.portrait}
+      />
+      <Typography
+        style={styles.technologiesHeading}
+        variant="h2"
+      >
         Technologies
       </Typography>
       <Typography
