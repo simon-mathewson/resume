@@ -1,8 +1,7 @@
 import { Document, Page, StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
-import Header from './Header';
 import Experience from './Experience';
-import Education from './Education';
+import Header from './Header';
 import Technologies from './Technologies';
 
 const styles = StyleSheet.create({
@@ -12,9 +11,6 @@ const styles = StyleSheet.create({
   sections: {
     flexDirection: 'row',
     marginTop: 8
-  },
-  sectionsRight: {
-    width: '33%'
   }
 });
 
@@ -31,10 +27,7 @@ function Resume() {
         <Header />
         <View style={styles.sections}>
           <Experience />
-          <View style={styles.sectionsRight}>
-            <Education />
-            <Technologies />
-          </View>
+          <Technologies />
         </View>
       </Page>
     </Document>
