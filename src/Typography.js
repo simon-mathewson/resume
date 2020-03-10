@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
     fontSize: 10
   },
   small: {
-    fontSize: 9
+    fontSize: 8
   }
 });
 
 const colors = {
   default: '#444',
   primary: '#2196f3',
-  reduced: '#888'
+  reduced: '#666'
 }
 
 function Typography(props) {

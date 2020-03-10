@@ -5,10 +5,14 @@ import Typography from './Typography';
 
 const styles = StyleSheet.create({
   gitHubHint: {
-    marginTop: 16
+    marginTop: 8
   },
   gitHubLink: {
-    fontSize: 9
+    fontSize: 8
+  },
+  languagesHeading: {
+    marginBottom: 4,
+    marginTop: 4
   },
   root: {
     paddingLeft: 16,
@@ -81,13 +85,24 @@ function RightSide() {
         'Python'
       ]} />
       <Typography
+        style={styles.languagesHeading}
+        variant="h2"
+      >
+        Languages
+      </Typography>
+      <Chips items={[
+        'English (fluent)',
+        'German (native)'
+      ]} />
+      <Typography
+        color="reduced"
         style={styles.gitHubHint}
         variant="small"
       >
-        I made this resume using React.
-        You can view the full source code at
+        {'I made this resume using React.\nYou can view the full source code at'}
       </Typography>
       <Typography
+        color="reduced"
         src="https://github.com/simon-mathewson/resume"
         style={styles.gitHubLink}
         variant="link"
