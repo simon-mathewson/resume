@@ -42,10 +42,10 @@ function RightSide() {
         'TypeScript',
         'React',
         'Angular',
+        'NPM',
         'SCSS',
         'Webpack',
         'Redux',
-        'NPM',
         'Jasmine/Karma'
       ]} />
       <Typography
@@ -62,8 +62,8 @@ function RightSide() {
         'TypeORM',
         'MySQL',
         'DynamoDB',
-        'Lua',
         'Swagger/OpenAPI',
+        'Lua',
         'AWS',
         'Google Cloud',
         'Firebase'
