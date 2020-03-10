@@ -65,7 +65,7 @@ const experiences = [
           Maintained and implemented backend and frontend features for the UI's of routers and other networking devices
         </ListItem>
         <ListItem>
-          Designed and implemented custom add-ons for web-based customer service software Zendesk, optimizing workflows and saving fellow employees hundreds of clicks a day
+          Designed and implemented custom add-ons for web-based customer service software Zendesk, optimizing workflows and saving fellow employees hundreds of clicks every day since
         </ListItem>
       </Fragment>
     )
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     marginTop: 4
   },
   educationTitle: {
-    marginTop: 4
+    marginTop: 8
   },
   employer: {
     marginTop: 4
