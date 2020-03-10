@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     marginTop: 4
   },
   root: {
-    paddingLeft: 16,
+    paddingLeft: 24,
     width: '34%'
   },
   sectionHeading: {
