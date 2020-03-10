@@ -21,11 +21,13 @@ Font.register({
 const styles = StyleSheet.create({
   h1: {
     fontFamily: 'Lexend Deca',
-    fontSize: 32
+    fontSize: 32,
+    letterSpacing: -1
   },
   h2: {
     fontFamily: 'Lexend Deca',
-    fontSize: 24
+    fontSize: 20,
+    letterSpacing: -1
   },
   h3: {
     fontFamily: 'Roboto',
@@ -36,14 +38,20 @@ const styles = StyleSheet.create({
     fontSize: 13
   },
   link: {
-    fontSize: 11,
+    fontSize: 10,
     textDecorationColor: '#666',
     textDecorationStyle: 'dotted'
   },
   body: {
-    fontSize: 11
+    fontSize: 10
   }
 });
+
+const colors = {
+  default: '#444',
+  primary: '#2196f3',
+  reduced: '#666'
+}
 
 function Typography(props) {
   const {bold, children, color, debug, src, style, variant} = props;
@@ -53,7 +61,7 @@ function Typography(props) {
     style: {
       ...styles[variant],
       ...style,
-      color: color === 'primary' ? '#2196f3' : '#222',
+      color: colors[color],
       fontWeight: bold ? 500 : 400
     }
   };
@@ -79,7 +87,7 @@ Typography.defaultProps = {
 Typography.propTypes = {
   children: PropTypes.node,
   bold: PropTypes.bool,
-  color: PropTypes.oneOf(['default', 'primary']),
+  color: PropTypes.oneOf(['default', 'primary', 'reduced']),
   debug: PropTypes.bool,
   src: PropTypes.string,
   style: PropTypes.object,

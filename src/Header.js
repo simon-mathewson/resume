@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: 4,
-    width: '50%'
+    width: '40%'
   },
   attributeIcon: {
     height: 12,

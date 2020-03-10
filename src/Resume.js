@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     padding: 40
   },
   sections: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginTop: 8
   },
   sectionsRight: {
     width: '33%'
