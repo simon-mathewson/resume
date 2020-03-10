@@ -46,13 +46,16 @@ const styles = StyleSheet.create({
   },
   body: {
     fontSize: 10
+  },
+  small: {
+    fontSize: 9
   }
 });
 
 const colors = {
   default: '#444',
   primary: '#2196f3',
-  reduced: '#666'
+  reduced: '#888'
 }
 
 function Typography(props) {
@@ -94,7 +97,7 @@ Typography.propTypes = {
   src: PropTypes.string,
   style: PropTypes.object,
   variant: PropTypes
-      .oneOf(['h1', 'h2', 'h3', 'h4', 'link', 'body'])
+      .oneOf(['h1', 'h2', 'h3', 'h4', 'link', 'body', 'small'])
       .isRequired
 };
 

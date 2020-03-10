@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function Experience() {
+function LeftSide() {
   return (
     <View style={styles.root}>
       <Typography variant="h2">
@@ -169,4 +169,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default LeftSide;

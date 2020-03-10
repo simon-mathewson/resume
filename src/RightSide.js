@@ -1,9 +1,15 @@
+import { StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
-import { View, StyleSheet } from '@react-pdf/renderer';
-import Typography from './Typography';
 import Chips from './Chips';
+import Typography from './Typography';
 
 const styles = StyleSheet.create({
+  gitHubHint: {
+    marginTop: 16
+  },
+  gitHubLink: {
+    fontSize: 9
+  },
   root: {
     paddingLeft: 16,
     width: '34%'
@@ -13,7 +19,7 @@ const styles = StyleSheet.create({
   }
 });
 
-function Technologies() {
+function RightSide() {
   return (
     <View style={styles.root}>
       <Typography variant="h2">
@@ -74,8 +80,22 @@ function Technologies() {
         'Bash',
         'Python'
       ]} />
+      <Typography
+        style={styles.gitHubHint}
+        variant="small"
+      >
+        I made this resume using React.
+        You can view the full source code at
+      </Typography>
+      <Typography
+        src="https://github.com/simon-mathewson/resume"
+        style={styles.gitHubLink}
+        variant="link"
+      >
+        github.com/simon-mathewson/resume
+      </Typography>
     </View>
   );
 }
 
-export default Technologies;
+export default RightSide;

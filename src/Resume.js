@@ -1,8 +1,8 @@
 import { Document, Page, StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
-import Experience from './Experience';
+import LeftSide from './LeftSide';
 import Header from './Header';
-import Technologies from './Technologies';
+import RightSide from './RightSide';
 
 const styles = StyleSheet.create({
   page: {
@@ -26,8 +26,8 @@ function Resume() {
       >
         <Header />
         <View style={styles.sections}>
-          <Experience />
-          <Technologies />
+          <LeftSide />
+          <RightSide />
         </View>
       </Page>
     </Document>
