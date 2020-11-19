@@ -49,7 +49,7 @@ function Header() {
         />
         <Attribute
           icon="location"
-          text="WA, USA & Berlin, Germany"
+          text="Berlin, Germany"
         />
       </View>
     </View>

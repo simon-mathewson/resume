@@ -24,14 +24,25 @@ function LeftSide() {
         Experience
       </Typography>
       <Experience
+        employer="Cosuno"
+        employerDescription="Startup offering cloud-based tendering for construction companies"
+        role="Full Stack Developer"
+        from="2020"
+        location="Berlin, Germany"
+        listItems={[
+          'Designed, implemented, reviewed and tested code in a Node.js backend and React.js frontend',
+          'Cutting-edge stack including TypeScript, TypeORM, GraphQL, Sentry, AWS and Mailjet'
+        ]}
+      />
+      <Experience
         employer="LE Commsulting"
         employerDescription="Software agency building web apps in art and education."
         role="Full Stack Developer"
         from="2018"
-        to="now"
+        to="2020"
         location="Berlin, Germany"
         listItems={[
-          'Independently designed, implemented, tested and deployed the web version of a mobile quiz game for students as well as a corresponding CMS for teachers',
+          'Designed, implemented, tested and deployed the web version of a mobile quiz game for students as well as a corresponding CMS for teachers',
           'Helped to design, implement, test and deploy an archival software and public exhibition site for a major art research institute',
           'Built an open source library which allows converting between complex date strings and JavaScript objects',
           'Implemented AWS lambda functions'
@@ -45,7 +56,7 @@ function LeftSide() {
         to="now"
         location="WA, USA"
         listItems={[
-          'Independently designed, implemented and deployed a web store and admin backend from scratch',
+          'Designed, implemented and deployed a web store and admin backend from scratch',
           'Created ads with Google AdWords, set up analytics via Google Analytics'
         ]}
       />
@@ -58,17 +69,7 @@ function LeftSide() {
         location="Berlin, Germany"
         listItems={[
           'Maintained and implemented backend and frontend features for the UI\'s of routers, WiFi repeaters and smart home devices',
-          'Designed and implemented custom add-ons for web-based customer service software Zendesk, optimizing workflows and saving fellow employees hundreds of clicks every day since'
-        ]}
-      />
-      <Experience
-        employer="Zeichen & Taten"
-        employerDescription="Office for graphic design and communication."
-        role="Graphic Design Intern"
-        from="2013"
-        location="Berlin, Germany"
-        listItems={[
-          'Learned how to professionally use Adobe Illustrator'
+          'Designed and implemented custom add-ons for web-based customer service software Zendesk, optimized workflows for customer service agents'
         ]}
       />
       <Typography
